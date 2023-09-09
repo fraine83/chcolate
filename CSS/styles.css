@@ -949,7 +949,7 @@ main {
 }
 .try
 {   
-    background: rgba(174, 242, 236, 0.533);
+    background: rgba(224, 240, 239, 0.533);
     border: 1px solid rgb(161, 167, 167);
     border-radius: 15px;
     width: 600px;
@@ -1198,15 +1198,18 @@ background: var(--hovercolor);
 }
 .footer {
     background-color: var(--primarycolor);
-    padding-bottom: 50px;
     margin: 0 auto;
+    padding: 50px 0;
     
 }
-
+.page-foot 
+{
+    padding: 0;
+}
 .footer-main {
     display: flex;
-    flex-wrap: wrap;
-    padding: 30px 32px;
+    padding: 0 32px;
+    flex-wrap: wrap;  
 }
 .titlesub {
     font-family: "Montserrat";
@@ -1264,14 +1267,12 @@ background: var(--hovercolor);
     }
 
 .line {
-    margin-left: 32px;
     background-color: rgba(255, 255, 255, 0.10);
     margin-bottom: 24px;
     width: 1136px;
     margin-top: 0;
 }
 .bottom {
-    padding-left: 32px;
     display: flex;
     flex-direction: row;
     gap: 24px;
