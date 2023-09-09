@@ -549,7 +549,10 @@ body {
 }
 section {
     color: var(--primarycolor);
-    background-color: var(--section-bg)
+    background-color: #FD72;
+}
+main {
+    background-color: #FD72;
 }
     body {
         font-family: "Montserrat";
@@ -767,6 +770,7 @@ section {
 
 .nub{
     padding-top: 72px;
+    background-color: #FD72;
 }
 .advantage {
     display: flex;
@@ -827,7 +831,7 @@ section {
 .gvs2 {
     stroke: var(--linecolor);
     height: 174px;
-    width: 174px;    
+    width: 50px;    
     display: inline-block;
     position: relative;
     top: 60px;   
@@ -945,7 +949,7 @@ section {
 }
 .try
 {   
-    background: rgba(238, 226, 191, 0.533);
+    background: rgba(174, 242, 236, 0.533);
     border: 1px solid rgb(161, 167, 167);
     border-radius: 15px;
     width: 600px;
@@ -960,7 +964,7 @@ section {
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.03em;
     margin-bottom: 24px;
 }
 .how.item:last-of-type
