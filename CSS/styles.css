@@ -10,6 +10,7 @@
     --border: rgba(17,17,17,0.1) ;
     --section-bg: #FAFAFA;
     --linecolor: rgba(255,255,255,0.50);
+    --lightslate: #8E8F99;
 ;}
 
 p,
@@ -26,7 +27,7 @@ html {
     box-sizing: border-box;
 }
 
-
+a,
 .list {
     text-decoration: none;
     list-style: none;
@@ -549,10 +550,9 @@ body {
 }
 section {
     color: var(--primarycolor);
-    background-color: #FD72;
 }
 main {
-    background-color: #FD72;
+    background-color: #FD01;
 }
     body {
         font-family: "Montserrat";
@@ -564,13 +564,14 @@ main {
 .made,
 .ourpro,
 .topspan,
-.chocspan {
+.chocspan,
+.buy {
     color: var(--orange);
 }
 
 .page-header {
     border-bottom: .1px solid var(--hovercolor);
-    background-color:#FD78; 
+    background-color:#FD59; 
     padding: 28px 0px 32px 0px;
 }
 
@@ -599,11 +600,13 @@ main {
 }
 
 .nav-menu .item:not(:last-child) {
-    margin-right: 24px
+    /*margin-right: 24px*/
+    
 }
 
-.nav-menu.list {
+.nav-menu {
     color: var(--primarycolor);
+    gap: 24px;
 }
 
 .social-contacts.list {
@@ -616,7 +619,7 @@ main {
     font-style: italic;
 }
 
-.nav-menu.list {
+.nav-menu {
     font-size: 14px;
     font-style: normal;
     line-height: 16em;
@@ -770,7 +773,6 @@ main {
 
 .nub{
     padding-top: 72px;
-    background-color: #FD72;
 }
 .advantage {
     display: flex;
@@ -842,9 +844,7 @@ main {
     padding: 172px 0;
 }
 .except  {
-    text-align: center;
-    
-    
+    text-align: center;   
 }
 .exception {
     display: flex;
@@ -862,6 +862,91 @@ main {
     text-transform: uppercase;
     margin-bottom: 28px;
 }
+.blur
+ {
+    list-style: none;   
+    text-decoration: none;
+}
+.topsel#blur.active {
+    filter: blur(20px);  
+}
+#excepopup {
+    position: fixed;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    width: 270px;
+    height: 270px;   
+    padding: 20px;
+    border-radius: 15px;
+    background-color: var(--whitecolor);
+    visibility: hidden;
+    opacity: 1;
+    transition: 0.5s;
+    z-index: 100;
+}
+.popup-container
+{
+    position: fixed;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 270px;
+    height: 270px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: var(--whitecolor);
+    visibility: hidden;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#popup.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+#popup2.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+.popuph2 {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.54px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+.popupbtn1,
+.popupbtn3 {
+    color: var(--whitecolor);
+    background: var(--orange);
+    width: 81px;
+    height: 24px;
+    border: transparent;
+    border-radius: 50px;
+    margin-right: 6px;
+
+}
+.popupbtn2,
+.popupbtn4 {
+    border: 1px solid var(--orange);
+    border-radius: 50px;
+    width: 100px;
+    height: 24px;
+    margin-bottom: 14px ;
+
+}
+
+.popupdes {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.28px;
+}
+
+
 .taste {
     color: var(--orange);
 }
@@ -1016,8 +1101,6 @@ main {
 
 
 
-
-
 .topsel 
 {
     display: flex;
@@ -1025,10 +1108,6 @@ main {
     justify-content: center;
     gap: 16px;
     margin-bottom: 32px;
-}
-.topsel .item
-{
-      /* flex-basis: calc((100% - 100) / 3);*/
 }
 .topbot 
 {   
@@ -1041,7 +1120,7 @@ main {
     line-height: 18px;
     letter-spacing: -0.28px;
 }
-.topell
+.topell.btn
 {
     color: var(--whitecolor);
     background-color: var(--orange);
@@ -1061,6 +1140,160 @@ color: var(--orange);
 background: var(--hovercolor);
 }
 
+/* Top Sellers Modal*/
+.top-seller-modal {
+    position: fixed;
+    top: 0%;
+    left: 35%;
+    transform:scale(0);
+    transition: 250ms ease-in-out;
+    text-align: center;
+    width: 609px;
+    height: 960px;
+    background: var(--modalbg); 
+    border: 2px solid var(--primarycolor);
+    border-radius: 15px;
+    padding: 48px;
+    z-index: 10;   
+    
+}
+.top-seller-modal#modal.active {
+    transform: scale(1);
+}
+.topbuy-close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 48px;
+    font-weight: 800;
+    cursor: pointer;
+    border: transparent;
+    background-color: transparent;
+}
+.topbuyh3 {
+    font-size: 1.25rem;
+    font-weight: 800;
+    line-height: 28px;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+    margin-bottom: 23px;
+}
+.top-seller-popup-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 16px;
+}
+.top-seller-popup-image .item{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 24px;
+    width: 160px;
+    height: 196px;
+    border-radius: 15px;
+    background-color:#FD7001;
+}
+.topimg {
+    height: 111px;
+    margin-bottom: 14px; 
+}
+.imgbtn{
+    padding: 8px 27px;
+    border: none;
+    border-radius: 10px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+   
+}
+.topsel-label-form {
+    width: 100%;
+    position: relative;
+    margin-bottom: 28px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    
+}
+.topsel-label-form-1 {
+    margin-bottom: 22px;
+}
+.topsel-form-input-name{
+    margin-right: 21px;
+}
+.topsel-form-input-name,
+.topsel-form-input-surname{
+    outline: none;
+    width: 240px;
+    padding: 12px 14px;
+    border: 1px solid var(--lightgray);
+    border-radius: 10px;
+    
+}
+.topsel-form-input {
+    outline: none;
+    width: 100%;
+    padding: 14px 14px;
+    border: 1px solid var(--lightgray);
+    border-radius: 10px;
+}
+.input-name {
+    position: relative;
+    top: -10px;
+}
+.input-name{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.form-input-icon {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+.topsel-form-input-comment{
+    width: 100%;
+   height: 150px;
+    padding: 14px 14px;
+    border: 1px solid var(--lightgray);
+    border-radius: 10px;
+
+}
+.topsel-btn {
+    width: 133px;
+    padding: 14px 40px;
+    display: flex;
+    border: transparent;
+    border-radius: 50px;
+    color: var(--whitecolor);
+    background-color: var(--orange);
+
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#overlay
+{
+    position: fixed;
+    opacity: 0;
+    transition: 250ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+#overlay.active
+{
+    opacity: 1;
+    pointer-events: all;
+}
+
+/*Review*/
 .review 
 {
     display: flex;
@@ -1078,7 +1311,7 @@ background: var(--hovercolor);
     position: relative;
     left: 0px;
     top: -45px;
-    z-index: 1;
+    z-index: 0;
     overflow: visible;
 }
 .revname
@@ -1113,9 +1346,9 @@ background: var(--hovercolor);
     border: 1px solid var(--border);
     border-radius: 15px;
 }
-.rellespot
+.topsellers
 {   
-    padding-bottom: 128px;
+  
 }
 .choc-is-loved 
 {

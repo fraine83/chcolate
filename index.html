@@ -167,9 +167,12 @@
         </svg>
       </div>
       <h2 class="advantages-title">Affordable price</h2>
-      <p class="advantages-description">Indulge in high-quality chocolate without breaking the bank with Simply Chocolate's selection of affordable 
-treats. Enjoy mouth-watering truffles and velvety chocolate bars without sacrificing taste or quality. Browse our selection and indulge in 
-affordable luxury today.</p>
+      <p class="advantages-description">Indulge in high-quality chocolate 
+        without breaking the bank with Simply Chocolate's 
+        selection of affordable treats. Enjoy mouth-watering 
+        truffles and velvety chocolate bars without sacrificing 
+        taste or quality. Browse our selection and indulge in 
+        affordable luxury today.</p>
     </li>
 
   <svg class="gvs2" 
@@ -186,8 +189,11 @@ affordable luxury today.</p>
         </svg>
       </div>
       <h2 class="advantages-title">Own production</h2>
-      <p class="advantages-description">We take pride in our own production process, ensuring that every step is carefully crafted to perfection. 
-From selecting the finest ingredients to handcrafting each piece, our attention to detail is evident in every bite.</p>
+      <p class="advantages-description">We take pride in our own 
+        production process, ensuring that every step is carefully 
+        crafted to perfection. From selecting the finest ingredients 
+        to handcrafting each piece, our attention to detail is evident 
+        in every bite.</p>
     </li>
   </ul>
 </section>
@@ -195,7 +201,8 @@ From selecting the finest ingredients to handcrafting each piece, our attention 
   <section class="exceptional">
   <div class="container">
     <h2 class="except">
-      IT ALL ADDS UP TO ONE<br/> EXCEPTIONAL <span class="taste" >TASTE</span> SENSATION
+      IT ALL ADDS UP TO ONE<br/> EXCEPTIONAL 
+      <span class="taste" >TASTE</span> SENSATION
     </h2>
     <p class="except-desc">
       At Simply Chocolate, we believe that the secret to exceptional chocolate<br/>
@@ -205,20 +212,47 @@ From selecting the finest ingredients to handcrafting each piece, our attention 
     </p>
     <ul class="exception list">
       <li class="choco-card item">
-       <img class="milk" src="./images/chocolate-removebg.jpg" alt="Milk Chocolate Image" />
-       <div>
+       <img class="milk"  src="./images/chocolate-removebg.jpg" 
+                          alt="Milk Chocolate Image" />
         <p class="card-desc milk-desc">Milk Chocolate</p>
+        </a>
+        </li>
+        <div id="excepopup">
+          <h3 class="popuph2">MILK CHOCOLATE</h3>
+          <button class="popupbtn1">chocolate</button>
+          <button class="popupbtn2">the benefits</button>
+        <p class="popupdes">
+            Milk chocolate is a solid chocolate confectionery containing cocoa,
+            sugar and milk. It is the most consumed type of chocolate. Chocolate
+            was originally sold and consumed as a beverage in pre-Columbian
+            times. Although four-fifths of all milk chocolate is sold in the
+            United States and Europe.
+          </p>
+          </div>
+        
+      <li class="milk-card item">
+        <img class="milk" src="./images/milk-removebg.jpg" 
+                          alt="Milk Image" />
+        <p class="card-desc">Milk</p>
+     </a>     
+ </li>
+	<div class="popup-container">  
+    <h3 class="popuph2">MILK</h3>
+    	<button class="popupbtn1">milk</button>
+       <button class="popupbtn2">the benefits</button>	 
+          <p class="popupdes">
+            Milk is a white liquid food produced by the mammary glands of
+            mammals. It is the primary source of nutrition for young mammals
+            (including breastfed human infants) before they are able to digest
+            solid food.Early-lactation milk, which is called colostrum, contains
+            antibodies that strengthen the immune system.
+          </p>
         </div>
 
-      </li>
-      <li class="milk-card item">
-        <img class="milk" src="./images/milk-removebg.jpg" alt="Milk Image" />
-        <p class="card-desc">Milk</p>
-
-
-      </li>
-      <li class="nuts-card item">
-        <img class="milk" src="./images/nuts-removebg.jpg" alt="Nuts Image" />
+ <li class="nuts-card item">
+        
+        <img class="milk" src="./images/nuts-removebg.jpg" 
+                          alt="Nuts Image" />
         <p class="card-desc nuts-card-title">Nuts</p>
 
 
@@ -326,12 +360,12 @@ From selecting the finest ingredients to handcrafting each piece, our attention 
 </div>
 </section>
 <!--section 6-->
-<section class="rellespot"> 
+<section class="topsellers section"> 
   <div class="topseller container">
     <h2 class="section-title"><span class="topspan">TOP</span> SELLERS
     </h2>
     <div class="topvid">
-    <ul class="topsel list">
+    <ul class="topsel list" id="blur">
       <li class="lespot item"> 
         <img src="./images/top-seller-1.jpg" 
               width="368" 
@@ -356,9 +390,124 @@ From selecting the finest ingredients to handcrafting each piece, our attention 
          coffee bean called Cacao. Cacao has been around <br/>
          for thousands of years and was first discovered by the Native <br/>
           American tribe called the Mayan's</p>
-          <button class="topell btn">Buy now</button>
+          <button data-modal-target="#modal" class="topell btn" onclick="toggle()">Buy now</button>
     </div>
     </div>
+    <div class="top-seller-modal" id="modal">
+      <div>
+      <div>
+         <button data-modal-close="#modal" class="topbuy-close" onclick="toggle()">
+          &times
+         </button> 
+         <h3 class="topbuyh3">BUY <span class="buy">NOW </span></h3>
+
+         <ul class="top-seller-popup-image list">
+          <li class="popup-image item">
+            <img class="topimg" src="./images/topsellerbuynow1.jpg"
+                   width="120"
+                   height="107" 
+                   alt="Item 1"
+                   >
+                   <button class="imgbtn">200 g</button>
+                  </li>
+          <li class="popup-image item">
+            <img class="topimg" src="./images/topsellerbuynow2.jpg"
+                  width="120"
+                  height="107"
+                  alt="Item 3"
+                  >
+                   <button class="imgbtn">100 g</button>
+          </li>
+          <li class="popup-image item">
+            <img class="topimg" src="./images/topsellerbuynow3.jpg"
+                  width="120"
+                  height="107"
+                  alt="Item 3"
+                  >
+                   <button class="imgbtn">300 g</button>
+          </li>
+         </ul>
+         </div>
+         <form 
+                name="sign_form"
+                aria-autocomplete="on"
+                class="form-container"
+                novalidate 
+           >
+          <label class="topsel-label-form-1">
+            <span class="input-name">Personal Information</span>
+            <input
+                type="text"
+                class="topsel-form-input-name"
+                name="name"
+                required
+                class="name"
+                required 
+                placeholder="Name"
+                /> 
+            <input 
+                type="text"  
+                class="topsel-form-input-surname"
+                name="name"
+                required
+                class="name"
+                required 
+                placeholder="Surname"
+                />   
+            </label> 
+          <label class="topsel-label-form label-input">
+            <span class="input-name">Email</span>
+            <input
+                class="topsel-form-input"
+                type="email"
+                name="email"
+                class="email"
+                required
+                placeholder="Email"
+                />
+             </label>   
+          <label class="topsel-label-form">
+            <span class="input-name">Phone Number</span>
+            <input
+                class="topsel-form-input"
+                type="tel"
+                name="phone"
+                class="phone"
+                required
+                validate
+                placeholder="Phone number"
+                />
+             </label>     
+          <label class="topsel-label-form">
+            <span class="input-name">Card</span>
+            <input
+                class="topsel-form-input"
+                type="tel"
+                name="phone"
+                class="phone"
+                required
+                placeholder="Enter card"
+              />
+              <svg class="form-input-icon" width="44" height="30">
+                <use href="./images/sub.svg#mastercard"></use>
+              </svg>
+             </label>   
+          <label class="topsel-label-form">
+            <span class="input-name">Comment</span>
+            <textarea
+                class="topsel-form-input-comment"
+                type="tel"
+                name="phone"
+                class="phone"
+                required
+                placeholder="Enter text"
+              ></textarea>
+             </label>   
+             <button type=submit  class="topsel-btn">submit</button>
+         </form>
+    </div>
+    </div>
+    <div id="overlay"></div>
   </div>
 </section>
 <!--section 7-->
@@ -402,6 +551,7 @@ From selecting the finest ingredients to handcrafting each piece, our attention 
                 creaminess. The wafer is soft but<br/>
                 crunchy.</p>
       </li>
+      </a>
     </ul>
     <div class="chocbtn">
       <button class="choclove btn">Leave a review</button>
@@ -502,7 +652,7 @@ From selecting the finest ingredients to handcrafting each piece, our attention 
       </div>
     </footer>
     <div class="subbackdrop is-hidden" data-modal>
-      <div class="modal">
+      <div class="modal" >
         <section class="subscribe-modal-bg"></section>
         <div class="modal-cont">
           <div class="any">
@@ -522,18 +672,20 @@ From selecting the finest ingredients to handcrafting each piece, our attention 
                   placeholder="Enter your email"
                 />
               </label>
-              <button type="submit" class="modal-button" data-modal-open1>Subscribe</button>
+              <button type="submit" class="modal-button">Subscribe</button>
             </form>
           </div>
         </div>
-        <button class="modal-close" data-modal-close>
+        <button class="modal-close" data-modal-close1="">
           <svg class="modal-close-icon" width="28" height="28">
             <use href="./images/sub.svg#close"></use>
           </svg>
         </button>
         </div>
-      </div>
-      <script src="./js/modal.js"></script>
+     
+        <script src="./js/modal.js"></script>
+      <script src="./js/blur.js"></script>
+      <script src="./js/allmodal.js"></script>
     </div>
   </body>
 </html>
