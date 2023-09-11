@@ -60,6 +60,8 @@ body {
     font-size: 14px;
     color: var(--whitecolor);
 }
+
+
 /*
 .subscribe-container {
     margin: 0 auto;
@@ -555,7 +557,7 @@ main {
     background-color: #FD01;
 }
     body {
-        font-family: "Montserrat";
+        font-family: 'Montserrat';
         letter-spacing: -0.28px;
         font-size: 14px;
         color: var(--whitecolor);
@@ -867,9 +869,6 @@ main {
     list-style: none;   
     text-decoration: none;
 }
-.topsel#blur.active {
-    filter: blur(20px);  
-}
 #excepopup {
     position: fixed;
     top: 50%;
@@ -1098,8 +1097,10 @@ main {
 
 
 
-
-
+/* Top sellers Section*/
+.topsel#blur.active {
+    filter: blur(20px);
+}
 
 .topsel 
 {
@@ -1171,6 +1172,7 @@ background: var(--hovercolor);
     background-color: transparent;
 }
 .topbuyh3 {
+    font-family: 'Montserrat';
     font-size: 1.25rem;
     font-weight: 800;
     line-height: 28px;
@@ -1193,6 +1195,9 @@ background: var(--hovercolor);
     height: 196px;
     border-radius: 15px;
     background-color:#FD7001;
+}
+.top-seller-popup-image .popup-image:hover img{
+    transform: scale(1.2);
 }
 .topimg {
     height: 111px;

@@ -99,7 +99,9 @@
         </h1>
         <div class="hero-button">
           <div class="button-wrapper">
-            <button type="button" 
+            <button data-modal-target=#modal
+            onclick="toggle()"
+                    type="button" 
                     class="buy-button">
                     Buy now
                   </button>
@@ -471,6 +473,7 @@
             <input
                 class="topsel-form-input"
                 type="tel"
+                id="phone"
                 name="phone"
                 class="phone"
                 required
@@ -669,7 +672,7 @@
                   name="email"
                   class="form-input"
                   required
-                  placeholder="Enter your email"
+                  placeholder="Enter your email"phone-number-validation> code .phone-number-validation> code .phone-number-validation> code .
                 />
               </label>
               <button type="submit" class="modal-button">Subscribe</button>
@@ -686,6 +689,11 @@
         <script src="./js/modal.js"></script>
       <script src="./js/blur.js"></script>
       <script src="./js/allmodal.js"></script>
+      <script src="./js/intlTelInput.js"></script>
+      <script> 
+              var input = document.querySelector("#phone");
+              window.intTelInput(input,{});
+              </script>
     </div>
   </body>
 </html>
