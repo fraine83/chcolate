@@ -1095,8 +1095,6 @@ main {
 }
 
 
-
-
 /* Top sellers Section*/
 .topsel#blur.active {
     filter: blur(20px);
@@ -1145,7 +1143,7 @@ background: var(--hovercolor);
 .top-seller-modal {
     position: fixed;
     top: 0%;
-    left: 35%;
+    left: 30%;
     transform:scale(0);
     transition: 250ms ease-in-out;
     text-align: center;
@@ -1234,6 +1232,8 @@ background: var(--hovercolor);
 .topsel-form-input-surname{
     outline: none;
     width: 240px;
+    height: 40px;
+    font-size: 14px;
     padding: 12px 14px;
     border: 1px solid var(--lightgray);
     border-radius: 10px;
@@ -1241,8 +1241,10 @@ background: var(--hovercolor);
 }
 .topsel-form-input {
     outline: none;
+    font-size: 14px;
     width: 100%;
-    padding: 14px 14px;
+    height: 40px;
+    padding: 10px 10px;
     border: 1px solid var(--lightgray);
     border-radius: 10px;
 }
@@ -1266,6 +1268,7 @@ background: var(--hovercolor);
     padding: 14px 14px;
     border: 1px solid var(--lightgray);
     border-radius: 10px;
+    outline: none;
 
 }
 .topsel-btn {
@@ -1577,7 +1580,8 @@ background: var(--hovercolor);
 }
 .subscribe-form-cont {
     display: inline-flex;
-    padding-left: 40px;
+    padding: 0 35px;
+   
 }
 .subscribe-modal-email {
     display: flex;
@@ -1592,25 +1596,30 @@ background: var(--hovercolor);
     height: 52px;
     font-size: 18px;
     font-weight: 400px;
-    padding: 14px 24px;
+    padding: 14px 30px;
     border: 1.5px solid var(--lightgray);
     border-radius: 30px;
     outline: none;
 }
-.modal-button {
+.submodal-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--whitecolor);
     background-color: var(--orange);
     font-size: 14px;
     font-weight: 600;
     width: 137px;
+    padding: 17px 40px;
     height: 52px;
     border: 1px solid transparent;
     border-radius: 50px;
     transition: background-color 600ms ease-in-out, color 300ms ease-in-out;
-    margin-left: 0;
+   
+
 }
-.modal-button:hover,
-.modal-button:focus {
+.submodal-button:hover,
+.submodal-button:focus {
     color: var(--orange);
     background-color: var(--hovercolor);
 }
@@ -1630,3 +1639,4 @@ background: var(--hovercolor);
     background-color: transparent;
     border: transparent;
 }
+

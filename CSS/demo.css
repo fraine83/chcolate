@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+
+.iti__hide {
+  display: none; }
+
+pre {
+  margin: 0 !important;
+  display: inline-block; }
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+  background: none; }
+
+.topsel-form-input-number {
+  outline: none;
+  height: 40px;
+  width: 513px;
+  padding: 6px 12px;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 14px;
+  color: inherit; }
+  input[disabled],
+   
+
+.topsel-form-input-number  {
+  border: 1px solid #CCC; }
+
+::-webkit-input-placeholder {
+  color: #BBB; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: red;
+  opacity: 1; }
+
+:-ms-input-placeholder {
+  color: #BBB; }
+
+

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chocolate</title>
     <link rel="stylesheet" href="./CSS/styles.css" />
+     <link href="./css/demo.css" rel="stylesheet" />
+     <link href="./css/intlTelInput.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
@@ -65,7 +67,7 @@
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Link to Twitter">
-          <svg  width="24" height="24">
+          <svg width="24" height="24">
             <use class="gvsitem" 
                   href="./images/header.svg#instagram-icon">
               </use>
@@ -443,16 +445,14 @@
                 class="topsel-form-input-name"
                 name="name"
                 required
-                class="name"
                 required 
                 placeholder="Name"
                 /> 
             <input 
                 type="text"  
                 class="topsel-form-input-surname"
-                name="name"
+                name="surname"
                 required
-                class="name"
                 required 
                 placeholder="Surname"
                 />   
@@ -463,7 +463,6 @@
                 class="topsel-form-input"
                 type="email"
                 name="email"
-                class="email"
                 required
                 placeholder="Email"
                 />
@@ -471,13 +470,9 @@
           <label class="topsel-label-form">
             <span class="input-name">Phone Number</span>
             <input
-                class="topsel-form-input"
+                class="topsel-form-input-number"
                 type="tel"
                 id="phone"
-                name="phone"
-                class="phone"
-                required
-                validate
                 placeholder="Phone number"
                 />
              </label>     
@@ -485,9 +480,9 @@
             <span class="input-name">Card</span>
             <input
                 class="topsel-form-input"
-                type="tel"
-                name="phone"
-                class="phone"
+                type="text"
+                name="card"
+                class="card"
                 required
                 placeholder="Enter card"
               />
@@ -499,14 +494,14 @@
             <span class="input-name">Comment</span>
             <textarea
                 class="topsel-form-input-comment"
-                type="tel"
-                name="phone"
-                class="phone"
+                type="text"
+                name="comment"
+                class="comment"
                 required
                 placeholder="Enter text"
               ></textarea>
              </label>   
-             <button type=submit  class="topsel-btn">submit</button>
+             <button type=submit class="topsel-btn">submit</button>
          </form>
     </div>
     </div>
@@ -675,7 +670,7 @@
                   placeholder="Enter your email"phone-number-validation> code .phone-number-validation> code .phone-number-validation> code .
                 />
               </label>
-              <button type="submit" class="modal-button">Subscribe</button>
+              <button type="submit" class="submodal-button">Subscribe</button>
             </form>
           </div>
         </div>
@@ -685,15 +680,14 @@
           </svg>
         </button>
         </div>
-     
+        <script src="./js/intlTelInput.js"></script>
+        <script>
+        const input = document.querySelector("#phone");
+        window.intlTelInput(input, {});
+        </script>
         <script src="./js/modal.js"></script>
-      <script src="./js/blur.js"></script>
-      <script src="./js/allmodal.js"></script>
-      <script src="./js/intlTelInput.js"></script>
-      <script> 
-              var input = document.querySelector("#phone");
-              window.intTelInput(input,{});
-              </script>
+        <script src="./js/blur.js"></script>
+        <script src="./js/allmodal.js"></script>
     </div>
   </body>
 </html>
